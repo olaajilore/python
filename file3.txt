@@ -1,0 +1,59 @@
+Write a program, which will find all the numbers between 1000 and 3000 (both included) such that each digit of a number is an even number. The numbers obtained should be printed in a comma separated sequence on a single line.
+
+Hint: In case of input data being supplied to the question, it should be assumed to be a console input. Divide each digit with 2 and verify is it even or not
+
+Solution
+values = []
+for i in range(1000,3001):
+    s = str(i)
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and 
+(int(s[3])%2==0):
+     print(values.append(s))
+
+print (",".join(values))
+
+
+
+Write a program that accepts a sentence and calculate the number of letters and digits.
+Suppose if the entered string is: Python0325
+Then the output will be:
+LETTERS: 6
+DIGITS:4
+
+Hint: Use built-in functions ofstring.
+
+Solution
+s = “aac34520”
+d={"DIGITS":0, "LETTERS":0}
+for c in s:
+    if c.isdigit():
+        d["DIGITS"]+=1
+    elif c.isalpha():
+        d["LETTERS"]+=1
+    else:
+        pass
+print("LETTERS", d["LETTERS"])
+print("DIGITS", d["DIGITS"])
+
+
+Design a code which will find the given number is Palindrome number or not.
+
+Hint: Use built-in functions of string.
+
+Solution
+# change this value for a different output
+my_str = 'aIbohPhoBiA'
+
+# make it suitable for caseless comparison
+my_str = my_str.casefold()
+
+# reverse the string
+rev_str = reversed(my_str)
+
+
+# check if the string is equal to its reverse
+if list(my_str) == list(rev_str):
+
+    print("It is palindrome")
+else:
+    print("It is not palindrome")

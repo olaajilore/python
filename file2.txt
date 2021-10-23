@@ -1,0 +1,35 @@
+Write a program which will find factors of given number and find whether the factor is even or odd.
+Hint: Use Loop with if-else statements
+num=50
+
+for i in range(1,num+1):
+    rem=num%i
+    if(rem==0):
+        if(i%2==0):
+            print("Factor is even:",i)
+        else:
+            print("factor is odd: ",i)
+    else:
+        pass
+
+
+Write a code which accepts a sequence of words as input and prints the words in a sequence after sorting them alphabetically.
+Hint: In case of input data being supplied to the question, it should be assumed to be a console input.
+
+
+
+my_str = "Welcome to Python"
+
+# breakdown the string into a list of words
+words = my_str.split()
+
+# sort the list
+words.sort()
+
+# display the sorted words
+print("The sorted words are:")
+for word in words:
+    print(word)
+
+
+  
